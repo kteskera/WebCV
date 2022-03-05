@@ -1,0 +1,146 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.container {
+  height: 700px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.card {
+  border-radius: 20px;
+  max-width: 960px;
+  box-shadow: 24px 24px 80px rgba(0, 0, 0, 0.1);
+  padding: 20px 20px 28px 20px;
+  box-sizing: border-box;
+  margin: 20px;
+  flex-direction: column;
+  display: flex;
+}
+
+@media (min-width: 576px) {
+  .card {
+    flex-direction: row;
+    align-items: center;
+    margin: 40px;
+    padding: 32px;
+  }
+}
+
+.cardImg {
+  border-radius: 25px;
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 18px;
+}
+
+@media (min-width: 576px) {
+  .cardImg {
+    width: 45%;
+    max-height: none;
+    min-height: 400px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .cardContent {
+    width: 55%;
+    padding-left: 40px;
+  }
+}
+
+.cardName {
+  color: rgb(102, 101, 101);
+  margin-bottom: 6px;
+}
+
+@media (min-width: 576px) {
+  .cardName {
+    margin-bottom: 8px;
+  }
+}
+
+.cardParagraph {
+  color: rgb(53, 52, 52);
+  text-align: justify;
+  background-size: 100% 42%;
+  background-position: 0 85%;
+  padding: 0 4px;
+  margin-left: -4px;
+}
+
+.columns {
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  border-radius: 20px;
+  width: 100%;
+  margin: 15px;
+}
+
+.column:hover {
+  cursor: pointer;
+}
+
+.columns img {
+  width: 165px;
+  height: 200px;
+}
+
+#pic {
+  height: 200px;
+  width: 200px;
+}
+
+@media (min-width: 576px) {
+  .column {
+    float: left;
+    width: 20%;
+  }
+
+  .columns:after {
+    justify-content: center;
+    align-items: center;
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.card2 {
+  border-radius: 20px;
+  max-width: auto;
+  box-shadow: 24px 24px 80px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: rgb(102, 101, 101);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+@media (max-width: 1000px) {
+  .columns img {
+    width: 82.5px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #pic {
+    height: 100px;
+    width: 100px;
+  }
+}
